@@ -1,3 +1,69 @@
+How to use it
+1) Run the script
+
+Blender → Scripting
+paste script into a new text block
+click Run Script
+
+2) Open the panel
+
+go to 3D View
+press N
+open Whip Sim
+
+3) Choose your pole
+Option A — generated pole
+Good for quick tests:
+
+Cylinder
+Box
+Sphere
+
+Option B — selected object as pole
+Good for arbitrary volume/shape:
+
+select any mesh
+enable Use Selected Pole
+choose collision mode:
+
+Mesh
+Convex Hull
+Box
+Sphere
+Cylinder
+
+
+
+4) Adjust the first contact location
+Use:
+
+First Contact Ratio x/L
+
+Interpretation:
+
+0.0 = first contact at the base
+1.0 = first contact at the tip
+
+Smaller values mean:
+
+earlier contact
+more remaining chain length to wrap
+more potential contact events
+more cumulative energy loss
+
+5) Play the simulation
+
+click Build / Rebuild Simulator
+press Spacebar to play
+
+You’ll see:
+
+the chain whip wrapping
+HUD values updating
+graph of energy lost per first-time contact event
+
+
+
 # Whip Around Pole Simulator for Blender
 
 A Blender add-on / script that approximates a **whip wrapping around a pole** using a **chain of rigid links and rigid-body constraints**.
